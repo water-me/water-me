@@ -4,15 +4,15 @@ $request = $_SERVER['REDIRECT_URL'];
 
 switch ($request) {
     case '/' :
-        // require __DIR__ . '/views/index.php';
         echo 'Hello World';
         break;
     case '' :
-        // require __DIR__ . '/views/index.php';
         echo 'Hello World';
         break;
+    case '/plants':
+        require __DIR__ . '/web/plants.php';
+        break;
     default:
-        // require __DIR__ . '/views/404.php';
-        echo 'Nope';
+        echo 'That aint it chief';
         break;
 }
